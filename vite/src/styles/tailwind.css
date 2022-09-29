@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  html,
+  body,
+  #root {
+    @apply bg-[#f15946] w-full h-full m-0 p-0 overflow-hidden;
+  }
+  header {
+    @apply absolute z-50 w-full p-14;
+  }
+}
+@layer components {
+  .container {
+    @apply mx-auto my-0 max-w-full w-full h-full flex-auto items-center justify-center;
+  }
+}
